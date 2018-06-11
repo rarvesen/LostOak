@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen Photography - nature, sports, concert, and events photography.">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        var photoListLeft = [
+"photosSports/PZ9A9939.jpg",
+"photosSports/IMG_8783.jpg",
+"photosSports/IMG_7324.jpg",
+"photosSports/PZ9A1169.jpg",
+"photosSports/PZ9A0312.jpg",
+"photosSports/IMG_5298.jpg",
+"photosSports/IMG_6001.jpg",
+"photosSports/IMG_7352.jpg",
+"photosSports/11862723423_49cd094f4d_o.jpg",
+"photosSports/IMG_0580.jpg",
+"photosSports/IMG_4967.jpg",
+"photosSports/IMG_4084.jpg",
+"photosSports/IMG_8291.jpg",
+"photosSports/PZ9A1128.jpg",
+"photosSports/IMG_2806.jpg",
+"photosSports/PZ9A0268.jpg",
+"photosSports/IMG_1242.jpg",
+"photosSports/IMG_7649.jpg",
+"photosSports/11863237746_74d6116327_o.jpg",
+"photosSports/IMG_4492.jpg",
+"photosSports/IMG_8688.jpg",
+"photosSports/IMG_8942.jpg",
+"photosSports/IMG_2613.jpg",
+"photosSports/11862712883_52628e01b0_o.jpg",
+"photosSports/IMG_4964.jpg",
+"photosSports/11863255896_74ab42598d_o.jpg",
+"photosSports/IMG_1305.jpg",
+"photosSports/IMG_6492.jpg",
+"photosSports/IMG_4343.jpg",
+"photosSports/11862390945_6646445e62_o.jpg",
+"photosSports/11863272086_a148e59a54_o.jpg",
+"photosSports/IMG_5135.jpg",
+"photosSports/IMG_7155.jpg",
+"photosSports/IMG_4638.jpg",
+"photosSports/IMG_5702.jpg",
+"photosSports/IMG_5935.jpg",
+"photosSports/IMG_2948.jpg",
+"photosSports/11862437125_674d33e040_o.jpg",
+"photosSports/11862426155_0912e75abc_o.jpg",
+"photosSports/IMG_0679.jpg",
+"photosSports/IMG_2809.jpg",
+"photosSports/IMG_4953.jpg",
+"photosSports/IMG_5145.jpg",
+"photosSports/IMG_5284.jpg",
+"photosSports/IMG_5688.jpg",
+"photosSports/IMG_4316.jpg",
+"photosSports/IMG_0020.jpg",
+"photosSports/IMG_9714.jpg",
+"photosSports/IMG_8746.jpg",
+"photosSports/IMG_9423.jpg",
+"photosSports/IMG_2095.jpg",
+"photosSports/IMG_9298.jpg",
+"photosSports/8519270678_974291d54b_o.jpg",
+"photosSports/IMG_2481.jpg",
+"photosSports/IMG_3829.jpg",
+"photosSports/IMG_5128.jpg",
+"photosSports/IMG_4215.jpg",
+        ];
+
+        var photoListRight = [
+"photosSports/IMG_2587.jpg",
+"photosSports/IMG_3467.jpg",
+"photosSports/IMG_0600.jpg",
+"photosSports/IMG_1870.jpg",
+"photosSports/IMG_2864.jpg",
+"photosSports/IMG_2751.jpg",
+"photosSports/IMG_1687.jpg",
+"photosSports/IMG_9559.jpg",
+"photosSports/IMG_7630.jpg",
+"photosSports/IMG_8437.jpg",
+"photosSports/IMG_9919.jpg",
+"photosSports/IMG_6694.jpg",
+"photosSports/IMG_2895.jpg",
+"photosSports/IMG_9593.jpg",
+"photosSports/IMG_2139.jpg",
+"photosSports/IMG_1317.jpg",
+"photosSports/IMG_4483.jpg",
+"photosSports/IMG_2559.jpg",
+"photosSports/11862727223_316ce3830b_o.jpg",
+"photosSports/IMG_9810.jpg",
+"photosSports/PZ9A0179.jpg",
+"photosSports/IMG_0534.jpg",
+"photosSports/IMG_0746.jpg",
+"photosSports/IMG_2513.jpg",
+"photosSports/IMG_4863.jpg",
+"photosSports/IMG_5014.jpg",
+"photosSports/IMG_9959.jpg",
+"photosSports/IMG_2889.jpg",
+"photosSports/IMG_5304.jpg",
+"photosSports/IMG_1347.jpg",
+"photosSports/IMG_3928.jpg",
+"photosSports/IMG_6661.jpg",
+"photosSports/IMG_4538.jpg",
+"photosSports/IMG_4590.jpg",
+"photosSports/IMG_5436.jpg",
+"photosSports/IMG_4944.jpg",
+"photosSports/IMG_1210.jpg",
+"photosSports/11862876944_8dddd152af_o.jpg",
+"photosSports/PZ9A0581.jpg",
+"photosSports/IMG_7514.jpg",
+"photosSports/IMG_6787.jpg",
+"photosSports/IMG_1217.jpg",
+"photosSports/IMG_6765.jpg",
+"photosSports/IMG_2129.jpg",
+"photosSports/PZ9A0114.jpg",
+"photosSports/IMG_0343.jpg",
+"photosSports/IMG_3120.jpg",
+"photosSports/IMG_1450.jpg",
+"photosSports/IMG_5194.jpg",
+"photosSports/IMG_4148.jpg",
+"photosSports/PZ9A0616.jpg",
+"photosSports/IMG_8244.jpg",
+"photosSports/IMG_2193.jpg",
+"photosSports/IMG_1611.jpg",
+"photosSports/IMG_6086.jpg",
+"photosSports/IMG_5184.jpg",
+"photosSports/IMG_6740.jpg",
+"photosSports/IMG_1758.jpg",
+"photosSports/IMG_1160.jpg",
+"photosSports/IMG_7333.jpg",
+"photosSports/IMG_7269.jpg",
+"photosSports/IMG_8943.jpg",
+"photosSports/IMG_5560.jpg",
+        ];
+    </script>
+</head>
+
+<body id="page">
+    <span class="title">Lost Oak Photography</span><br />
+    <span>concert, sports, nature, and event photography</span><br /><br />
+
+    <span class="mainMenu">
+        <span class="menuText"><a href="index.html?page=2">concerts</a></span>
+        <span class="menuText"><a href="bandlist.html?page=2">band list</a></span>
+        <span class="menuTextSelected">sports</span>
+        <span class="menuText"><a href="other.html?page=2">other</a></span>
+    </span><br />
+
+    <div id="snippetMain">
+        <img class="cameraImage" src="images/camera.png" />
+        <div class="mainText">
+            Capturing live music, sports, and other events in the Austin and San Antonio, Texas areas.
+            Photos have been published on websites and magazines such as Rolling Stone, Rockstar, Performer, National Rock Review, Glide, Popular Science, Smithsonian, Texas Monthly, and various newspapers, news, and musician sites.
+            <p></p>
+            Contact:<br />
+            Ralph Arvesen<br />
+            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+            <p></p>
+            <div class="smContainer">
+                <a href="https://www.facebook.com/ralph.arvesen" target="_parent"><img src="images/social-facebook.png" title="facebook" class="smImages" /></a>
+                <a href="https://www.flickr.com/photos/rarvesen/sets" target="_parent"><img src="images/social-flickr.png" title="flickr" class="smImages" /></a>
+                <a href="https://www.twitter.com/ralpharvesen" target="_parent"><img src="images/social-twitter.png" title="twitter" class="smImages" /></a>
+                <a href="https://www.instagram.com/ralph.arvesen" target="_parent"><img src="images/social-instagram.png" title="instagram" class="smImages" /></a>
+                <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" " target="_parent"><img src="images/social-mail.png" title="email" class="smImages" /></a>
+            </div>
+        </div>
+        <div class="email"></div>
+    </div>
+
+    <br />
+
+    <div class="photoArea">
+        <div id="photosLeft" class="photosLeft"></div>
+        <div id="photosRight" class="photosRight"></div>
+    </div>
+</body>
+</html>

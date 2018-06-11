@@ -1,0 +1,95 @@
+﻿body
+{
+ background-color:#000000;
+ color:#a8a8a8;
+ font-family:Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+ font-size:100%;
+ width:500px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+a, a:link, a:visited
+{
+	color:#c0c0c0;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover
+{
+	color: #d7b178;
+	text-decoration: underline;
+}
+
+.email a, .email a:link, .email a:visited
+{
+    font-size:90%;
+	color: #808080;
+	text-decoration: none;
+	outline: none;
+}
+
+.email a:hover
+{
+	color: #cc9966;
+	text-decoration: underline;
+}
+
+.title
+{
+    font-size:200%; 
+    color:#c0c0c0;   
+}
+
+.text 
+{
+    float:right;
+    width:280px;
+}
+
+.email 
+{
+    text-align:right;
+    margin-left:auto;
+    margin-right:0;
+    display:block;
+    padding-bottom:6px;
+    border-bottom-color:#606060;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+
+.cameraImage
+{
+    display:inline;
+}
+
+.thumbnail
+{
+    width: 100%;
+    height: auto;
+}
+
+.photoContainer
+{
+    line-height: 0;
+   -webkit-column-count: 1;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    1;
+   -moz-column-gap:      0px;
+   column-count:         1;
+   column-gap:           0px;
+}
+
+ul
+{
+	list-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+

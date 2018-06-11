@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen Photography - nature, sports, concert, theater, and other events photography.">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.cycle2.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <script language="javascript">
+        var photoList = [
+            "photosBand/IMG_5231.jpg",
+            "photosBand/IMG_5254.jpg",
+            "photosBand/IMG_5468.jpg",
+            "photosBand/IMG_5081.jpg",
+            "photosBand/IMG_4594.jpg",
+            "photosBand/IMG_4831.jpg",
+            "photosBand/IMG_3000.jpg",
+            "photosBand/IMG_3043.jpg",
+            "photosBand/IMG_3861.jpg",
+            "photosBand/IMG_2811.jpg",
+            "photosBand/IMG_2865.jpg",
+        
+            "photosBand/IMG_1754.jpg",
+            "photosBand/IMG_1177.jpg",
+            "photosBand/IMG_2222.jpg",
+            "photosBand/IMG_8857.jpg",
+            "photosBand/IMG_8961.jpg",
+            "photosBand/IMG_9045.jpg",
+            "photosBand/IMG_8896.jpg",
+
+            "photosBand/IMG_2849.jpg",
+            "photosBand/IMG_2130.jpg",
+            "photosBand/IMG_8178.jpg",
+            "photosBand/IMG_8615.jpg",
+            "photosBand/IMG_7636.jpg",
+            "photosBand/IMG_5154.jpg",
+
+
+            "photosBand/IMG_0132.jpg",
+            "photosBand/IMG_0320.jpg",
+            "photosBand/IMG_1111.jpg",
+            "photosBand/IMG_1889.jpg",
+            "photosBand/IMG_2097.jpg",
+            "photosBand/IMG_2602.jpg",
+            "photosBand/IMG_2134.jpg",
+            "photosBand/IMG_9927.jpg",
+            "photosBand/IMG_4570.jpg",
+            "photosBand/IMG_5126.jpg",
+            "photosBand/IMG_6382.jpg",
+            "photosBand/IMG_6433.jpg",
+            "photosBand/IMG_6550.jpg",
+            "photosBand/IMG_9305.jpg",
+
+            "photosOther/IMG_1265.jpg",
+            "photosOther/IMG_1793.jpg",
+            "photosOther/IMG_0368.jpg",
+            "photosOther/IMG_1983.jpg",
+            "photosOther/IMG_2054.jpg",
+            "photosOther/IMG_2449.jpg",
+            "photosOther/IMG_2453.JPG",
+            "photosOther/IMG_5342_HDR.jpg",
+            "photosOther/IMG_8853.jpg",
+
+            "photosSports/IMG_7324.jpg",
+            "photosSports/IMG_1242.jpg",
+            "photosSports/IMG_9388.jpg",
+            "photosSports/IMG_0679.jpg",
+            "photosSports/IMG_1305.jpg",
+            "photosSports/IMG_4215.jpg",
+            "photosSports/IMG_6001.jpg",
+            "photosSports/IMG_7649.jpg"
+        ];
+
+        $(document).ready(function () {
+            photoList.forEach(function (item) {
+                $("#photos").append("<img class='thumbnail' src='" + item + "' />");
+            });
+        });
+    </script>
+
+    <style>
+    </style>
+
+</head>
+<body id="page">
+
+    <span class="title">Lost Oak Photography</span><br />
+    <span>nature, sports, concert, theater, and other events photography</span><br /><br />
+    <img class="cameraImage" src="images/camera.png" />
+    <span class="text">
+        Photos by Ralph Arvesen. Natural light photography, specializing in nature, sports, concert, and other event photography. Samples available at Flickr, Facebook, and Google+.<br /><br />
+        &bull; <a href="http://www.flickr.com/photos/rarvesen/sets" target="_parent">flickr</a><br />
+        &bull; <a href="https://www.facebook.com/ralph.arvesen/photos_albums" target="_parent">facebook</a><br />
+        &bull; <a href="https://plus.google.com/photos/+RalphArvesen/albums" target="_parent">google+</a><br />
+    </span>
+    <span class="email"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></span>
+    <br />
+    <img src="photosother/IMG_7862.jpg" />
+    <div id="photos" class="photoContainer">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen Photography - nature, sports, concert, and events photography.">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="bandlist.js" type="text/javascript"></script>
+    <script language="javascript">
+        var bandList = GetBandList();
+        $(document).ready(function () {
+            var lastBandLetter = "";
+            bandList.forEach(function (entry) {
+                // break between groups
+                if (lastBandLetter != "" && entry[0][0].toLowerCase() != lastBandLetter) {
+                    $("#bandListText").append("<br\>");
+                }
+                lastBandLetter = entry[0][0].toLowerCase();
+
+                // link or name of band
+                if (entry[1].length > 0) {
+                    $("#bandListText").append("<a target='_parent' href='" + entry[1] + "'>" + entry[0] + "</a><br/>");
+                }
+                else {
+                    $("#bandListText").append(entry[0] + "<br/>");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body id="page">
+    <span class="title">Lost Oak Photography</span><br />
+    <span>concert, sports, nature, and event photography</span><br /><br />
+
+    <span class="mainMenu">
+        <span class="menuText"><a href="index.html?page=2">concerts</a></span>
+        <span class="menuTextSelected">band list</span>
+        <span class="menuText"><a href="sports.html?page=2">sports</a></span>
+        <span class="menuText"><a href="other.html?page=2">other</a></span>
+    </span><br />
+
+    <div id="snippetMain">
+        <img class="cameraImage" src="images/camera.png" />
+        <div class="mainText">
+            Capturing live music, sports, and other events in the Austin and San Antonio, Texas areas.
+            Photos have been published on websites and magazines such as Rolling Stone, Rockstar, Performer, National Rock Review, Glide, Popular Science, Smithsonian, Texas Monthly, and various newspapers, news, and musician sites.
+            <p></p>
+            Contact:<br />
+            Ralph Arvesen<br />
+            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+            <p></p>
+            <div class="smContainer">
+                <a href="https://www.facebook.com/ralph.arvesen" target="_parent"><img src="images/social-facebook.png" title="facebook" class="smImages" /></a>
+                <a href="https://www.flickr.com/photos/rarvesen/sets" target="_parent"><img src="images/social-flickr.png" title="flickr" class="smImages" /></a>
+                <a href="https://www.twitter.com/ralpharvesen" target="_parent"><img src="images/social-twitter.png" title="twitter" class="smImages" /></a>
+                <a href="https://www.instagram.com/ralph.arvesen" target="_parent"><img src="images/social-instagram.png" title="instagram" class="smImages" /></a>
+                <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" " target="_parent"><img src="images/social-mail.png" title="email" class="smImages" /></a>
+            </div>
+        </div>
+        <div class="email"></div>
+    </div>
+
+    <br />
+
+     <div id="bandListText" class="bandListText">
+     </div>
+     <br />
+</body>
+</html>

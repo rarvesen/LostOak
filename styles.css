@@ -1,0 +1,313 @@
+﻿body
+{
+ background-color:#000000;
+ color:#a8a8a8;
+ font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ font-size:medium;
+ line-height:140%;
+ width:800px;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+a, a:link, a:visited
+{
+	color:#c0c0c0;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover
+{
+	color: #d7b178;
+	text-decoration: underline;
+}
+
+.email a, .email a:link, .email a:visited
+{
+	font-size:small;
+	color: #808080;
+	text-decoration: none;
+	outline: none;
+}
+
+.email a:hover
+{
+	color: #cc9966;
+	text-decoration: underline;
+}
+
+.title
+{
+    font-size:x-large;
+    color:#f0f0f0;   
+}
+
+.text 
+{
+    float:right;
+    width:280px;
+}
+
+.cameraImage
+{
+    float:left;
+    width:154px;
+    height:auto;
+    margin-right:30px;
+    margin-bottom:10px;
+}
+
+.subTitle 
+{
+    display:inline;
+    font-size:medium;
+    font-weight:normal;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.mainText 
+{
+    font-size:medium;
+    font-weight:normal;
+    margin-left:20px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.mainMenu
+{
+    background-color:#303030;
+    width:100%;
+    display:block;
+    margin-bottom:8px;
+}
+
+.menuText
+{
+    background-color:#303030;
+    padding:5px 20px 5px 20px;
+    margin-right:8px;
+}
+
+.menuTextSelected
+{
+    color:#ffffff;
+    background-color:#505050;
+    padding:5px 20px 5px 20px;
+    margin-right:10px;
+}
+
+.eventCategory 
+{
+    font-size:x-large;
+    padding-bottom:8px;
+}
+
+.bandListText 
+{
+    font-size:small;
+    display: block;
+    -webkit-column-count: 3;
+    -moz-column-count: 3; 
+    column-count: 3;
+    line-height:100%;
+}
+
+.bandListText br 
+{
+    line-height:160%;
+}
+
+.sportListText 
+{
+    font-size:small;
+    display: block;
+    -webkit-column-count: 3;
+    -moz-column-count: 3; 
+    column-count: 3;
+    line-height:100%;
+}
+
+.sportListText br 
+{
+    line-height:180%;
+}
+
+
+@media only screen and (max-width: 750px)
+{
+    body
+    {
+     background-color:#000000;
+     color:#a8a8a8;
+     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     font-size:medium;
+     line-height:140%;
+     width:95%;
+     margin-left:auto;
+     margin-right:auto;
+    }
+
+    .mainText 
+    {
+        font-size:medium;
+        font-weight:normal;
+        margin-left:0px;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+    .mainMenu
+    {
+        background-color:#303030;
+        width:100%;
+        display:block;
+        margin-bottom:8px;
+        margin-left:0px;
+    }
+
+    .menuText
+    {
+        background-color:#303030;
+        padding:5px 10px 5px 10px;
+        margin-right:8px;
+    }
+
+    .menuTextSelected
+    {
+        color:#ffffff;
+        background-color:#505050;
+        padding:5px 10px 5px 10px;
+        margin-right:10px;
+    }
+
+    .cameraImage
+    {
+        float:left;
+        width:90px;
+        height:auto;
+        margin-right:20px;
+        margin-bottom:10px;
+    }
+
+    .bandListText 
+    {
+        font-size:small;
+        display: block;
+        -webkit-column-count: 2;
+        -moz-column-count: 2; 
+        column-count: 2;
+        line-height:100%;
+    }
+
+    .bandListText br 
+    {
+        line-height:160%;
+    }
+
+    .sportListText 
+    {
+        font-size:small;
+        display: block;
+        -webkit-column-count: 2;
+        -moz-column-count: 2; 
+        column-count: 2;
+        line-height:100%;
+    }
+
+    .sportListText br 
+    {
+        line-height:180%;
+    }
+}
+
+
+.contactArea
+{
+    text-align:right;
+    margin-left:auto;
+    margin-right:0;
+    display:block;
+    padding-bottom:6px;
+    border-bottom-color:#606060;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+
+.email 
+{
+    text-align:right;
+    margin-top:30px;
+    margin-left:auto;
+    margin-right:0;
+    padding-bottom:6px;
+    border-color:#303030;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    display:block;
+    background-color:#202020;
+}
+
+.smContainer {
+    text-align:right;
+}
+
+.smImages 
+{
+    width: 45px;
+    height: 45px;
+    opacity: 0.65;
+    margin-top:10px;
+    margin-bottom:5px;
+    margin-left:10px;
+}
+
+.photoArea
+{
+}
+
+.photosLeft
+{
+    float:left;
+    width:50%;
+    margin-bottom:20px;
+}
+
+.photosRight
+{
+    float:right;
+    width:50%;
+    margin-bottom:20px;
+}
+
+
+/*
+ul
+{
+	list-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.photoContainer
+{
+    line-height: 0;
+   -webkit-column-count: 2;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    1;
+   -moz-column-gap:      0px;
+   column-count:         2;
+   column-gap:           0px;
+}
+*/

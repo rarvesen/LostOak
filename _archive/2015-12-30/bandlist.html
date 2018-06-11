@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen Photography - nature, sports, concert, and events photography.">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        var bandList = [
+["Abi Ann", "http://www.texreview.com/2015/09/abi-ann-austin-texas-august-29-2015.html"],
+["Above My Enemy", ""],
+["All Sides Equal", "http://www.texreview.com/2015/03/all-sides-equal-fitzgeralds-san-antonio.html"],
+["AFI (A Fire Inside)", ""],
+["Alice Cooper", "http://www.texreview.com/2015/02/alice-cooper-majestic-theater-san.html"],
+["All Sides Equal", ""],
+["Amon Amarth", ""],
+["Annalise Emerick", ""],
+["Ashley Cleveland", ""],
+["Ashley Monical", ""],
+["Asleep at the Wheel", ""],
+["Barton Hills Choir", ""],
+["Benjamin Booker", ""],
+["Benji Hughes", ""],
+["Billy Joe Shaver", ""],
+["Black Heart Saints", "http://www.texreview.com/2015/10/black-heart-saints-in-austin-texas.html"],
+["Black Label Society", ""],
+["Black Lips", ""],
+["Black Pistol Fire", ""],
+["Black Stone Cherry", ""],
+["Blake Richardson Band", ""],
+["Blue, The Misfit", ""],
+["Borrisokane", ""],
+["Breakout", ""],
+["Broods", ""],
+["Bullet For My Valentine", "http://www.texreview.com/2015/10/bullet-for-my-valentine-austin-texas.html"],
+["Butcher Babies", ""],
+["Calvin Harris", ""],
+["Canvas People", ""],
+["Capital Cities", ""],
+["Carolyn Wonderland", ""],
+["Celeste'al Descent", ""],
+["Charlie Pierce", ""],
+["Chris Castaneda Project", ""],
+["Chromeo", ""],
+["Chvrches", ""],
+["Cilantro Boombox", ""],
+["City and Colour", ""],
+["Communion", ""],
+["Courtney Barnett", ""],
+["Crooks", ""],
+["Cults", ""],
+["Dave Sebree", ""],
+["Deftones", ""],
+["Del Castillo", ""],
+["Emily Wolfe", ""],
+["Enrique Iglesias", "http://www.texreview.com/2015/02/enrique-iglesias-frank-erwin-center.html"],
+["Eric Hutchinson", "http://www.texreview.com/2015/09/eric-hutchinson-austin-texas-august-29.html"],
+["Eric Tessmer", ""],
+["Exodus", ""],
+["Eye of Time", ""],
+["Fabulous Thunderbirds", ""],
+["Fall Out Boy", "http://www.texreview.com/2015/12/fall-out-boy-in-austin-texas-december.html"],
+["Falls", ""],
+["Fat White Family", ""],
+["Father John Misty", ""],
+["Five Finger Death Punch", ""],
+["Foster the People", ""],
+["Ginuwine", ""],
+["Glassjaw", ""],
+["Guy Forsyth Band", ""],
+["Hellyeah", ""],
+["Hikes", ""],
+["Hogan & Moss", ""],
+["Holiday Mountain", ""],
+["Iceage", ""],
+["Iggy Azalea", ""],
+["Interpol", ""],
+["IsoLayDead", ""],
+["J Balvin", ""],
+["James Bay", "http://www.texreview.com/2015/12/james-bay-in-austin-texas-december-17.html"],
+["James Rivera (Metal Asylum)", ""],
+["Jeff Beck", ""],
+["Jello Biafra", ""],
+["JJ Garrett Band", ""],
+["John Garr", ""],
+["Jose Ruiz & The Sweet Tones", ""],
+["Journey", ""],
+["Judas Priest", "http://www.texreview.com/2015/05/judas-priest-cedar-park-texas-may-14.html"],
+["Kelly Clarkson", "http://www.texreview.com/2015/09/kelly-clarkson-austin-texas-august-29.html"],
+["Kevin Finch", ""],
+["Kid Rock", ""],
+["Killswitch Engage", ""],
+["King Diamond", "http://www.texreview.com/2014/11/king-diamond-fun-fun-fun-fest-austin.html"],
+["KP and the Boom Boom", ""],
+["Lake Street Drive", ""],
+["Lamb of God", "http://www.texreview.com/2015/10/lamb-of-god-austin-texas-september-2.html"],
+["Lisa Tingle", ""],
+["Little Big Town", "http://www.texreview.com/2015/04/little-big-town-austin-texas-apr-16-205.html"],
+["Lizzy Borden", ""],
+["Lorde", ""],
+["Lunice", ""],
+["Mac DeMarco", ""],
+["Major Lazer", ""],
+["Malford Milligan", ""],
+["Marcia Ball", ""],
+["Matt Nathanson", ""],
+["Matt the Cat Trio", ""],
+["Metallica", "http://www.texreview.com/2015/06/metallica-austin-texas-june-6-2015.html"],
+["METZ", ""],
+["Middle Class Rut", ""],
+["Miss Lavelle White", ""],
+["Mo", ""],
+["Monte Montgomery", ""],
+["Motionless In White", "http://www.texreview.com/2015/10/motionless-in-white-austin-texas.html"],
+["Nancy Silva Project", "http://www.texreview.com/2015/10/nancy-silva-project-in-austin-texas.html"],
+["Nashville Pussy", "http://www.texreview.com/2015/09/nashville-pussy-austin-texas-august-28.html"],
+["Night Terrors of 1927", ""],
+["Nostalghia", ""],
+["Nothing More", ""],
+["One-Eyed Doll", "http://www.texreview.com/2015/03/one-eyed-doll-fitzgeralds-san-antonio.html"],
+["Outkast", ""],
+["Pallbearer", ""],
+["Peelander-Z", ""],
+["Pentatonix", "http://www.texreview.com/2015/09/pentatonix-austin-texas-august-29-2015.html"],
+["Pink Floyd Laser Spectacular", "http://www.texreview.com/2015/02/pink-floyd-laser-spectacular-frank.html"],
+["Pitbull", "http://www.texreview.com/2015/02/pitbull-frank-erwin-center-austin-texas.html"],
+["Primus", ""],
+["Radkey", ""],
+["Ranch Ghost", ""],
+["Rebelution", ""],
+["Reputante", ""],
+["Ruby Jane", ""],
+["Rueben and the Dark", ""],
+["Run 2 Cover", "http://www.texreview.com/2015/10/run-2-cover-in-austin-texas-20151017.html"],
+["San Antoinio Pipes & Drums", ""],
+["San Fermin", ""],
+["Seether", ""],
+["Shelley King", ""],
+["Sick Of It All", "http://www.texreview.com/2014/11/sick-of-it-all-fun-fun-fun-festival.html"],
+["Sid Fly", ""],
+["Siren", ""],
+["Skrillex", ""],
+["Slayer", "http://www.texreview.com/2014/11/slayer-acl-live-austin-texas-nov-18-2014.html"],
+["Slipknot", "http://www.texreview.com/2015/10/slipknot-austin-texas-september-2-2015.html"],
+["Sour Bridges", ""],
+["St. Vincent", ""],
+["Star & Micey", ""],
+["Steve Miller Band", ""],
+["Stitched Up Heart", "http://www.texreview.com/2015/10/stitched-up-heart-in-austin-texas.html"],
+["Sucka Please", ""],
+["Sun Kil Moon", ""],
+["Suicidal Tendencies", ""],
+["Tejas Brothers", ""],
+["Texas Hippie Coalition", "http://www.texreview.com/2015/05/texas-hippie-coalition-cedar-park-texas.html"],
+["Temples", ""],
+["The Akuzma", ""],
+["The Answer", "http://www.texreview.com/2015/09/the-answer-san-antonio-texas-june-23.html"],
+["The Avett Brothers", ""],
+["The Band Perry", "http://www.texreview.com/2015/12/the-band-perry-in-austin-texas-december.html"],
+["The Gaslight Anthem", ""],
+["The Glitch Mob", ""],
+["The New Pornographers", ""],
+["The Pains of Being Pure At Heart", ""],
+["The Preatures", ""],
+["The Replacements", ""],
+["The Stapletones", ""],
+["Toby Keith", "http://www.texreview.com/2015/04/toby-keith-austin-texas-apr-16-2015.html"],
+["Train", ""],
+["Trans-Siberian Orchestra", "http://www.texreview.com/2015/12/trans-siberian-orchestra-in-austin.html"],
+["Twin Peaks", ""],
+["Tyler Bryant", "http://www.texreview.com/2015/09/tyler-bryant-cedar-park-texas-april-30.html"],
+["tUnE-yArDs", ""],
+["Vagenda", "http://www.texreview.com/2015/03/vagenda-fitzgeralds-san-antonio-texas.html"],
+["Vallejo", ""],
+["Valient Thorr", "http://www.texreview.com/2015/09/valient-thorr-austin-texas-august-28.html"],
+["von Grey", ""],
+["Wall of Soul", ""],
+["Warpaint", ""],
+["Wheeler Brothers", ""],
+["Whitesnake", "http://www.texreview.com/2015/09/whitesnake-san-antonio-texas-june-23.html"],
+["Wild Child", ""],
+["Willie Nelson", ""],
+["Wood & Wire", ""],
+["Yelle", ""],
+["Zella Day", "http://www.texreview.com/2015/12/zella-day-in-austin-texas-december-17.html"],
+["Zorch", ""],
+["ZZ Top", "http://www.texreview.com/2015/01/zz-top-majestic-theater-san-antonio.html"]
+];
+
+        $(document).ready(function () {
+            bandList.forEach(function (entry) {
+                if (entry[1].length > 0) {
+                    $("#bandListText").append("<a target='_parent' href='" + entry[1] + "'>" + entry[0] + "</a><br/>");
+                }
+                else {
+                    $("#bandListText").append(entry[0] + "<br/>");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body id="page">
+    <span class="title">Lost Oak Photography</span><br />
+    <span>concert, sports, nature, and event photography</span><br /><br />
+    <img class="cameraImage" src="images/camera.png" />
+
+    <div class="mainText">
+        Photos by Ralph Arvesen... capturing concert, sports, nature, and other events.
+        <p></p>
+        Photos have been published on websites and magazines such as Rolling Stone, Rockstar, Performer, National Rock Review, Glide, Popular Science, and various newspapers, news, and musician sites.
+        <p></p>
+        Let me know if there is an event or photo opportunity that I can help capture.
+        <p></p>
+        <a href="https://www.facebook.com/ralph.arvesen" target="_parent"><img src="images/social-facebook.png" title="facebook" class="smImages" /></a>
+        <a href="https://www.flickr.com/photos/rarvesen/sets" target="_parent"><img src="images/social-flickr.png" title="flickr" class="smImages" /></a>
+        <a href="https://www.twitter.com/rarvesen" target="_parent"><img src="images/social-twitter.png" title="twitter" class="smImages" /></a>
+        <a href="https://www.instagram.com/ralph.arvesen" target="_parent"><img src="images/social-instagram.png" title="instagram" class="smImages" /></a>
+        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"" target="_parent"><img src="images/social-mail.png" title="email" class="smImages" /></a>
+    </div>
+
+    <div class="mainMenu">
+        <div class="menuText"><a href="index.html?page=1">bands</a></div><br />
+        <div class="menuTextSelected">band list</div></br>
+        <div class="menuText"><a href="sports.html?page=1">sports</a></div><br />
+        <div class="menuText"><a href="other.html?page=1">other</a></div>
+    </div>
+    <span class="email"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#114;&#97;&#108;&#112;&#104;&#46;&#97;&#114;&#118;&#101;&#115;&#101;&#110;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></span>
+    <br />
+    Taken photos in a variety of environments and able to adjust to the situation; from large national arena acts, to local performers in small dimly lit bars, to rainy remote festivals.
+    <p></p>
+    <div id="bandListText" class="bandListText">
+    </div>
+    <br />
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen - concert, sports, nature, and event photography.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="manifest" href="manifest.json">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="snippetContent.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        var photoListLeft = [
+            ["https://c2.staticflickr.com/8/7392/9432568960_729e8926d0_c.jpg", "Mount Rainier National Park"],
+            ["https://c2.staticflickr.com/6/5742/21362521649_35c918e500_c.jpg", "Stars, Blanco Courthouse, Johnson City, Texas"],
+            ["https://c1.staticflickr.com/9/8100/8451396806_92dd89bf97.jpg", "Grand Prismatic Spring, Yellowstone National Park"],
+            ["https://c1.staticflickr.com/9/8092/8452446009_5ef7af514e.jpg", "Moose, Grand Teton National Park"],
+            ["https://c1.staticflickr.com/9/8383/8451778666_758c50852a.jpg", "Rattlesnake"],
+            ["https://c1.staticflickr.com/9/8224/28385840494_f051a312fd_c.jpg", "Stars Night Sky"],
+
+            ["https://c1.staticflickr.com/9/8391/8451396836_394899e1c6.jpg", "Bison, Yellowstone National Park"],
+            ["https://c2.staticflickr.com/4/3668/9614663261_4b99e06b3b_c.jpg", "Olympic National Park"],
+            ["https://c2.staticflickr.com/6/5467/9470737162_2700108c0e.jpg", "Second Beach, Olympic National Park"],
+            ["https://c1.staticflickr.com/9/8555/8713347867_3fe79350f4_z.jpg", "Black Swallowtail Caterpillars"],
+            ["https://c1.staticflickr.com/9/8387/8470085922_ed703dcda3.jpg", "Cat Watching Birds"],
+        ];
+
+        var photoListRight = [
+            ["https://c1.staticflickr.com/3/2900/14780976415_3718bb81ba.jpg", "Stars Night Sky"],
+            ["https://c2.staticflickr.com/8/7287/15977982114_a7ff26fd3d.jpg", "Horseshoe Bend, Page, Arizona"],
+            ["https://c1.staticflickr.com/3/2947/15242132098_8e3e048acf.jpg", "Approaching Thunderstorm"],
+            ["https://c2.staticflickr.com/8/7420/9432570176_4f91989f29.jpg", "Mount Rainier National Park"],
+
+            ["https://c1.staticflickr.com/9/8089/8450689833_f1f6c80eeb.jpg", "Toad"],
+            ["https://c1.staticflickr.com/9/8226/8554860028_3a8ca5e215_c.jpg", "Texas Bluebonnet (Lupinus texensis)"],
+            ["https://c2.staticflickr.com/6/5151/14250733433_4941187ab2.jpg", "Dog"],
+            ["https://c2.staticflickr.com/4/3786/9617891426_eca3c57126.jpg", "Olympic National Park"],
+            ["https://c2.staticflickr.com/6/5574/14615346407_f0c995a33e.jpg", "Stars Night Sky"],
+            ["https://c1.staticflickr.com/9/8894/28748895012_da29a05f02_z.jpg", "Stars Night Sky"],
+            ["https://c1.staticflickr.com/9/8107/8451778698_0107d73c59_o.jpg", "Bats"],
+            ["https://c1.staticflickr.com/3/2878/9615468567_71e9aa12fc.jpg", "Red Fox, San Juan Island, Washington"],
+            ["https://c2.staticflickr.com/4/3791/9050377661_039b38b653.jpg", "Wolf Spider"],
+            ["https://c2.staticflickr.com/8/7117/13738753075_2caf3c99a5.jpg", "St. Joseph Catholic Church, San Antonio, Texas"]
+        ];
+
+        $(function () {
+            WriteContent("other");
+        });
+
+    </script>
+</head>
+
+<body id="page">
+    <div id="snippetHeader"></div>
+    <div id="snippetMenu"></div><br />
+    <div id="snippetMain"></div><br />
+
+    <div class="photoArea">
+        <div id="photosLeft" class="photosLeft"></div>
+        <div id="photosRight" class="photosRight"></div>
+    </div>
+</body>
+</html>

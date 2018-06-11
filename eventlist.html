@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen - concert, sports, nature, and event photography.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="manifest" href="manifest.json">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="eventlist.js" type="text/javascript"></script>
+    <script src="snippetContent.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        var sportList = GetSportList();
+        var festList = GetFestList();
+        var bandList = GetBandList();
+
+        $(document).ready(function () {
+            WriteContent("bands");
+
+            // sports list
+            sportList.forEach(function (entry) {
+                // link or sports name
+                if (entry[1].length > 0) {
+                    $("#sportListText").append("<a target='_parent' href='" + entry[1] + "'>" + entry[0] + "</a><br/>");
+                }
+                else {
+                    $("#sportListText").append(entry[0] + "<br/>");
+                }
+            });
+            $("#sportsListText").append("<br/>");
+
+            // festival list
+            festList.forEach(function (entry) {
+                // link or fest name
+                if (entry[1].length > 0) {
+                    $("#eventListText").append("<a target='_parent' href='" + entry[1] + "'>" + entry[0] + "</a><br/>");
+                }
+                else {
+                    $("#eventListText").append(entry[0] + "<br/>");
+                }
+            });
+            $("#eventListText").append("<br/>");
+
+            // band list
+            var lastBandLetter = "";
+            bandList.forEach(function (entry) {
+                // break between groups
+                if (lastBandLetter != "" && entry[0][0].toLowerCase() != lastBandLetter) {
+                    $("#bandListText").append("<br\>");
+                }
+                lastBandLetter = entry[0][0].toLowerCase();
+
+                // link or name of band
+                if (entry[1].length > 0) {
+                    $("#bandListText").append("<a target='_parent' href='" + entry[1] + "'>" + entry[0] + "</a><br/>");
+                }
+                else {
+                    $("#bandListText").append(entry[0] + "<br/>");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body id="page">
+    <div id="snippetHeader"></div>
+    <div id="snippetMenu"></div><br />
+    <div id="snippetMain"></div><br />
+
+    <div class='eventCategory'>Sports and other events</div>
+    <div id="sportListText" class="sportListText"></div><br /><br />
+
+    <div class='eventCategory'>Festivals</div>
+    <div id="eventListText" class="bandListText"></div><br /><br />
+
+    <div class="eventCategory">Bands</div>
+    <div id="bandListText" class="bandListText"></div><br />
+</body>
+</html>

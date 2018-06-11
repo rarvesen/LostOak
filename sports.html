@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Lost Oak Photography</title>
+    <meta name="description" content="Ralph Arvesen - concert, sports, nature, and event photography.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="manifest" href="manifest.json">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="snippetContent.js" type="text/javascript"></script>
+
+    <script language="javascript">
+        // add images that are >= 500px width
+        var photoListLeft = [
+        ["https://c1.staticflickr.com/5/4567/38318965806_4a76094c91_c.jpg", "Texas Tech Red Raiders Volleyball"],
+        ["https://c2.staticflickr.com/6/5501/11863261006_a5bb632f63_c.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4287/35110530780_43ac95d3ce.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c1.staticflickr.com/5/4549/37977223945_3d4efd4ddf.jpg", "University of Texas Longhorns Volleyball"],
+        ["https://c1.staticflickr.com/5/4735/39568366951_e62825b39c_z.jpg", "University of Texas Longhorns Basketball"],
+        ["https://c1.staticflickr.com/5/4488/37591967216_26c8022b6c.jpg", "Spirit of Le Mans FIA World Endurance Championship"],
+        ["https://c1.staticflickr.com/3/2830/33849617431_a22e4e6bf7.jpg", "MMA Fighting"],
+        ["https://c1.staticflickr.com/5/4574/24395156858_95c6f0d169.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c1.staticflickr.com/1/280/18774201808_77463404ec.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4691/38672492705_a3ccac0572_z.jpg", "University of Texas Basketball"],
+        ["https://c1.staticflickr.com/5/4281/35329995312_a370a126bc.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c1.staticflickr.com/1/313/18341404403_0ce2b00cfc.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4409/36362541500_7b82d309b6.jpg", "Lucas Oil Drag Boat Race"],
+        ["https://c1.staticflickr.com/1/484/18961932435_69144ec067.jpg", "X Games"],
+        ["https://c2.staticflickr.com/2/1496/23557028063_7045fe517a_c.jpg", "Austin Acoustics Tryouts"],
+        ["https://c1.staticflickr.com/5/4636/27792159419_2e70319a96.jpg", "University of Texas Longhorns Basketball"],
+
+        ["https://c1.staticflickr.com/5/4260/35457607006_cf8a7448ae.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c2.staticflickr.com/8/7469/15769346712_7ea751cb7f_z.jpg", "Fun Fun Fun Fest"],
+        ["https://c1.staticflickr.com/1/531/18775769059_a42298229a_c.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4440/36926815502_fd99c1b4f2.jpg", "Pirelli World Challenge (GTS)"],
+        ["https://c2.staticflickr.com/4/3722/9554518605_4d2a61b554_z.jpg", "Rodeo"],
+        ["https://c1.staticflickr.com/3/2841/12894614484_bb30cf713e_c.jpg", "Mountain Bike Race"],
+        ["https://c1.staticflickr.com/5/4430/36925841852_773bb449eb.jpg", "Pirelli World Challenge (GT3 Cup Trophy)"],
+        ["https://c2.staticflickr.com/8/7553/15582980670_fee10e7dd9.jpg", "Fun Fun Fun Fest"],
+        ["https://c2.staticflickr.com/8/7516/15582990530_8fba88a8a8_c.jpg", "Fun Fun Fun Fest"],
+        ["https://c2.staticflickr.com/4/3803/11862850704_ecb9ae2e87.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5530/11862399835_934f04a1ea.jpg", "High School Marching Band"],
+        ["https://c1.staticflickr.com/5/4253/35487013056_86b76624dc.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c1.staticflickr.com/3/2837/33594423460_24f52c54d5.jpg", "MMA Fighting"],
+        ["https://c1.staticflickr.com/5/4253/35487023196_db19bd0c67.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c2.staticflickr.com/6/5616/15765940661_bce6e3ba42_z.jpg", "Fun Fun Fun Fest"],
+        ["https://c1.staticflickr.com/5/4574/38510125581_0c4de54b6b_z.jpg", "WWE"],
+
+        ["https://c1.staticflickr.com/5/4461/24172420248_8199b84eff.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/4/3703/18961974825_da35c9c0a9.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4564/38234596922_e9cc83d61e.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c1.staticflickr.com/3/2833/11862437125_343b0936d3_z.jpg", "5K Run"],
+        ["https://c1.staticflickr.com/5/4206/34629624604_6c0ce14a6b.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c1.staticflickr.com/5/4570/38454205196_f3aa7c57bf_z.jpg", "WWE"],
+        ["https://c2.staticflickr.com/8/7357/11863268066_264db0653f.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4452/23787940968_86055efb53.jpg", "Spirit of Le Mans FIA World Endurance Championship"],
+        ["https://c2.staticflickr.com/4/3718/11862884534_a32f1ed6be.jpg", "High School Basketball"],
+        ["https://c2.staticflickr.com/8/7357/11862402485_59e7e4d5ff_z.jpg", "Little League Football"],
+        ["https://c1.staticflickr.com/5/4447/37854709766_a427f14931.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/8/7406/9557307958_3c8093f215.jpg", "Rodeo"],
+        ["https://c2.staticflickr.com/4/3951/33166372743_544fb1186e.jpg", "MMA Fighting"],
+
+        ["https://c1.staticflickr.com/5/4561/26734230339_3d356faff0_z.jpg", "WWE"],
+        ["https://c1.staticflickr.com/5/4509/38024297961_87d5874f76_z.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c1.staticflickr.com/1/362/18339454504_8895c2eef7_c.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/274/18935783346_029f08e767.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/279/18774321218_1e4e09e7b2.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/525/18775702839_d92b3e6c56_c.jpg", "X Games"],
+        ["https://c2.staticflickr.com/6/5832/22662034996_026e11cc71.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/4/3862/18341280323_8ae4fe1c53.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/408/18775779319_323730c9fc.jpg", "X Games"],
+        ["https://c2.staticflickr.com/4/3852/18774301420_3c2eebb95f_c.jpg", "X Games"],
+        ["https://c2.staticflickr.com/4/3695/18775793239_c5a8ca7e73.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/483/18775800779_ffffe228fc_z.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/318/18935769126_242e5ffc63.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/330/18774358858_e2a6fcfb71_c.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/515/18774357798_da9334e8fd.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/259/18956485402_0ec4a129e0_c.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4258/35486955586_e5dac9fd90.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c2.staticflickr.com/8/7552/15148383943_6c862ef924.jpg", "Fun Fun Fun Fest"],
+        ["https://c2.staticflickr.com/2/1519/23888182380_56aa51bef9_z.jpg", "Austin Acoustics Tryouts"],
+        ["https://c2.staticflickr.com/2/1458/24387589231_09cf656e9e_z.jpg", "Austin Acoustics Mini-camp"],
+        ["https://c2.staticflickr.com/2/1457/24469980145_ac7c48664e_c.jpg", "Austin Acoustics Mini-camp"],
+        ["https://c2.staticflickr.com/2/1537/24361671142_9da2a6a313_c.jpg", "Austin Acoustics Mini-camp"],
+        ["https://c2.staticflickr.com/2/1634/24075768442_25ef5d5aa5.jpg", "Austin Acoustics Tryouts"],
+        ["https://c2.staticflickr.com/2/1560/24101199551_13c02766ce_z.jpg", "Austin Acoustics Tryouts"],
+        ["https://c2.staticflickr.com/2/1496/23555599354_01c7a3144d_z.jpg", "Austin Acoustics Tryouts"],
+        ["https://c1.staticflickr.com/1/652/22067015313_58d629f8a5.jpg", "High School Football"],
+        ];
+
+        var photoListRight = [
+        ["https://c2.staticflickr.com/4/3943/33849611641_c97d747252.jpg", "MMA fighting"],
+        ["https://c2.staticflickr.com/4/3861/18339413554_6c9babb8fa.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4679/38672403985_44466730d7_z.jpg", "University of Texas Longhorns Basketball"],
+        ["https://c1.staticflickr.com/5/4556/38478143962_a1bee171c4_z.jpg", "WWE"],
+        ["https://c1.staticflickr.com/5/4680/38672404105_63d0fc391d_z.jpg", "University of Texas Longhorns Basketball"],
+        ["https://c1.staticflickr.com/5/4361/35909792594_d98f38efc6_z.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c1.staticflickr.com/5/4686/25698278998_5cbca8229c_z.jpg", "Oklahoma State Basketball"],
+        ["https://c1.staticflickr.com/1/256/18956563602_8f846125a7_z.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4260/35084382620_11cb4207d3.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c2.staticflickr.com/2/1686/23843143793_00ce593ca8.jpg", "Austin Acoustics Mini-camp"],
+        ["https://c1.staticflickr.com/5/4537/38148168924_0d9ec59d57.jpg", "University of Texas Longhorns Volleyball"],
+
+        ["https://c1.staticflickr.com/5/4544/26490101149_a35f079f4b.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c1.staticflickr.com/1/433/18774205210_b4b4181c17_c.jpg", "X Games"],
+        ["https://c2.staticflickr.com/6/5775/23958882922_44c0b1e70c_c.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4240/35329993932_1a2c0461c5_z.jpg", "AVP Professional Beach Volleyball"],
+
+        ["https://c1.staticflickr.com/3/2883/33594417920_5b1e586850.jpg", "MMA Fighting"],
+        ["https://c2.staticflickr.com/2/1469/23555620574_895d40d98d_z.jpg", "Austin Acoustics Tryouts"],
+        ["https://c1.staticflickr.com/5/4550/26490087499_959b882d11_z.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/6/5655/24040985776_d67d9ac97a.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4583/38121745244_7dff4fcd68.jpg", "Oregon State Volleyball"],
+        ["https://c2.staticflickr.com/2/1600/23975534631_6f4f85bf95_c.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/3/2929/33821839602_749ebf7892_z.jpg", "MMA Fighting"],
+        ["https://c1.staticflickr.com/5/4481/36930497584_e911ba3ebf.jpg", "Spirit of Le Mans FIA World Endurance Championship"],
+        ["https://c2.staticflickr.com/2/1543/23429895544_37188431f6_c.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4455/38024300471_ae128796a5.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c1.staticflickr.com/5/4640/25698280158_6e05ed3485.jpg", "University of Texas Longhorns Basketball"],
+
+        ["https://c1.staticflickr.com/5/4360/36620111731_0f1edea785.jpg", "Lucas Oil Drag Boat Race"],
+        ["https://c1.staticflickr.com/5/4216/35340377681_9a10ec203f_z.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c2.staticflickr.com/8/7437/12952412903_9e35913236_c.jpg", "USA Cycling Pro Mountain Bike Race"],
+        ["https://c1.staticflickr.com/5/4483/37993584592_129e75f044.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/6/5797/24032259136_fd75411634_z.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5615/15769349192_0a97f88d47.jpg", "Fun Fun Fun Fest"],
+        ["https://c1.staticflickr.com/5/4264/35487014996_cd7e78345c_z.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c2.staticflickr.com/6/5741/23699179829_49e6205f3f.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4406/36701039690_0bc42bda4a.jpg", "Radical North American Masters"],
+        ["https://c1.staticflickr.com/1/561/18775783269_629270ef73_z.jpg", "X Games"],
+        ["https://c2.staticflickr.com/4/3682/18339390204_b112f96604.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/310/18935797146_de67ee046b.jpg", "X Games"],
+        ["https://c1.staticflickr.com/1/504/18774265400_68e6daefce_z.jpg", "X Games"],
+        ["https://c1.staticflickr.com/5/4286/35358769602_f781345b23.jpg", "AVP Professional Beach Volleyball"],
+
+        ["https://c2.staticflickr.com/2/1641/24058106355_920ce95fc7.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4459/37193441114_c5e796d3de.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/2/1693/24058191895_2c319cc9c8.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5631/23762489960_376166a59d_z.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4209/34629618094_3208b4e73d.jpg", "AVP Professional Beach Volleyball"],
+        ["https://c1.staticflickr.com/5/4430/36926906562_632f4cbe6d.jpg", "Radical North American Masters"],
+        ["https://c2.staticflickr.com/6/5781/23975562201_17baf69310.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5830/24032036116_e645c48de6.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4535/38211437866_ec23571512.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/6/5636/23949983292_99e737a148.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1592/24058134915_a4d3927ca4.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1485/23431358203_93793f5fcd.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/1/676/22748544335_10d2faef76.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4363/37097331035_bb65c9ede1.jpg", "Pirelli World Challenge (SprintX)"],
+        ["https://c1.staticflickr.com/5/4548/26734136229_8a8a87fc57.jpg", "WWE"],
+
+        ["https://c2.staticflickr.com/2/1490/23555596684_f30eed740e_c.jpg", "Austin Acoustics Tryouts"],
+        ["https://c2.staticflickr.com/6/5818/22519672391_c0e109e229_z.jpg", "High School Volleyball"],
+        ["https://c2.staticflickr.com/6/5809/22508659305_201dfddf64_z.jpg", "High School Volleyball"],
+        ["https://c1.staticflickr.com/1/616/22320931048_b87a3d0e35.jpg", "High School Volleyball"],
+        ["https://c2.staticflickr.com/6/5755/23699228879_0ae90c8c16_z.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5789/23438807584_27ce15806f_z.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1699/23958873762_0bae37728a.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1652/24040887376_b1694dd949.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1521/23771529120_74381613f8.jpg", "High School Football"],
+        ["https://c1.staticflickr.com/5/4466/26248371049_93b031a88c.jpg", "University of Texas Longhorn Volleyball"],
+        ["https://c2.staticflickr.com/6/5685/22674631522_49c66f91a2.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1580/24040977676_857f0e3715.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5810/23690496289_c8a5dafbdc.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1474/23431700813_5d2fef9862.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1622/24058467995_6c287213df.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5804/23430057334_d136ea637d.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/2/1705/23762771400_2a17366091.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5724/22417462397_c2ec6519aa_z.jpg", "High School Volleyball"],
+        ["https://c1.staticflickr.com/1/582/22066852953_f282ece546.jpg", "High School Football"],
+        ["https://c2.staticflickr.com/6/5726/22699317281_99ce29cf2e_c.jpg", "High School Football"],
+        ];
+
+        $(function () {
+            WriteContent("sports");
+        });
+    </script>
+</head>
+
+<body id="page">
+    <div id="snippetHeader"></div>
+    <div id="snippetMenu"></div><br />
+    <div id="snippetMain"></div><br />
+
+    <div class="photoArea">
+        <div id="photosLeft" class="photosLeft"></div>
+        <div id="photosRight" class="photosRight"></div>
+    </div>
+</body>
+</html>
